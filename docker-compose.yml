@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mn-xios:
+    image: 'xios'
+    container_name: mn-xios
+    build:
+      context: .
+    ports:
+      - 37191:37191/tcp
+    volumes:
+      - /root/.xios:/root/.XIOS
